@@ -878,7 +878,7 @@ class PHPExcel
     {
         foreach ($this as $key => $val) {
             if (is_object($val) || (is_array($val))) {
-                $this->[$key] = unserialize(serialize($val));
+                $this->{$key} = unserialize(serialize($val));
             }
         }
     }

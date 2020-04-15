@@ -2892,7 +2892,7 @@ class PHPExcel_Worksheet implements PHPExcel_IComparable
                     $this->autoFilter = $newAutoFilter;
                     $this->autoFilter->setParent($this);
                 } else {
-                    $this->[$key] = unserialize(serialize($val));
+                    $this->{$key} = unserialize(serialize($val));
                 }
             }
         }
